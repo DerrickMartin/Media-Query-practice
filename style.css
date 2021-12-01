@@ -18,23 +18,24 @@ body {
     width: 100vw;
     margin: 0px;
     padding: 0px;
-    background-color: var(--primary-background-color)
+    background-color: var(--primary-background-color);
 }
 #container {
 
     display: flex;
+    justify-content: center;
+    align-items: center;
     border: solid 2px rgb(0, 57, 110);
     height: 200px;
-    width: 98vw;
-    margin: 2px;
-    padding: ;
+    width: 94vw;
+    margin: auto;
 }
+
 /* add styles for card*/ 
 .card {
     border: solid 1px; 
     height: 60px;
     width: 50px;
-    
     background-color: var(--primary-card-background-color);
 }
 
@@ -42,4 +43,29 @@ body {
 a  {
     text-decoration: none;
     color: var(--primary-color);
+}
+
+
+/* add media queries for tablet*/
+@media (min-width:641px)  { 
+    .#container{
+        height: 250px;
+    }
+    .card {
+        height: 100px;
+        width: 70px;
+    }
+
+    .mobile-menu {
+    
+    }
+}
+
+/* add media queries for laptop */
+
+@media (min-width: 900px) {
+    .card {
+        height: 140px;
+        width: 110px;
+    }
 }
