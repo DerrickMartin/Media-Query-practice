@@ -1,0 +1,21 @@
+:root {
+    --primary-color: rgb(236, 236, 236);
+    background-color: darkgray;
+}
+
+nav>ul {
+  display: flex;
+  list-style: none;
+}
+nav {
+    line-height: 72px;
+    position: sticky;
+}
+.resources {
+    margin-left: auto;
+}
+/* add styles for links */
+a  {
+    text-decoration: none;
+    color: var(--primary-color);
+}
