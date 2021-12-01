@@ -1,19 +1,43 @@
 :root {
     --primary-color: rgb(236, 236, 236);
-    background-color: darkgray;
+    --primary-background-color: rgb(169, 169, 169);
+    --primary-card-background-color: rgba(73, 73, 73, 0.692);
 }
-
 nav>ul {
   display: flex;
   list-style: none;
 }
 nav {
     line-height: 72px;
-    position: sticky;
 }
 .resources {
     margin-left: auto;
 }
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--primary-background-color)
+}
+#container {
+
+    display: flex;
+    border: solid 2px rgb(0, 57, 110);
+    height: 200px;
+    width: 98vw;
+    margin: 2px;
+    padding: ;
+}
+/* add styles for card*/ 
+.card {
+    border: solid 1px; 
+    height: 60px;
+    width: 50px;
+    
+    background-color: var(--primary-card-background-color);
+}
+
 /* add styles for links */
 a  {
     text-decoration: none;
